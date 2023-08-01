@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: 'Space Mono', monospace;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  line-height: normal;
+}
+
+.full-length-header {
+  text-align: center;
+}
+
+div {
+  width: auto;
+  border: solid;
+  padding: 15px;
+  margin: 15px;
+  transition: 0.3s;
+}
+
+div:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.3);
+}
+
+.parent-div {
+  padding:0%;
+}
+
+
+.child-div {
+  width: 45%;
+  background-color: white ;
+}
+
+.flex {
+  display: flex;
+  background-color: white;
+}
+
+.parent-div:hover {
+  background-color: #56445D;
+}
+
+.child-div:hover {
+  width: 45%;
+  background-color: #548687 ;
+  box-shadow: 15px 15px rgb(0, 0, 0);
+}
+
+.flex:hover {
+  display: flex;
+  background-color: #E2856E;
+}
+
+
+.header {
+  background-color: #f0f0f0; /* Set your desired background color for the header */
+  padding: 20px;
+}
+
+.welcome-to-my-profile {
+  padding: 0%;
+}
+
+.header-and-image {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  /* width: fit-content; */
+  /* top: 50%;
+  right: 50%; */
+
+}
+.image-container {
+  position: relative;
+  margin: 0%;
+  align-content: center;
+  text-align: center;
+  object-fit: contain;
+}
+
+#rose {
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+  height: 100px;
+  object-fit: contain;
+}
+
+#plant {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  object-fit: contain;
+}
+
+#tree {
+  position: absolute;
+  bottom: 0;
+  right: 60%;
+  object-fit: contain;
+}
+
+#nature-imgs {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Add a hover effect to the image-item */
+.image-item:hover {
+  transform: translateY(-20%); /* Adjust the value to control how much the images rise */
+}
+
+.disabled {
+  pointer-events: none;
+}
