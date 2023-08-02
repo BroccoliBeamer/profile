@@ -249,7 +249,7 @@ images:hover {
 
 
 .sun {
-  background-image: url('./images/sunface.jpg') !important;
+  background-image: url('..profile/images/sunface.jpg') !important;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
