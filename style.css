@@ -22,19 +22,42 @@ div:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.3);
 }
 
+.the-div:hover {
+  background-color: #104547;
+  transition: 0.7s;
+}
+.the-div {
+  background-color: rgb(203, 203, 203);
+}
+.header {
+  padding: 0;
+  opacity: 1;
+  background-color: white;
+}
+
+.header:hover {
+  transition-duration: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: #CA2E55;
+}
+.images:hover img{
+  transition: 1s;
+  opacity: 0;
+}
 .parent-div {
+  background-color: rgb(160, 160, 160);
   padding:0%;
 }
 
 
 .child-div {
   width: 45%;
-  background-color: white ;
+  background-color: rgb(100, 100, 100);
 }
 
 .flex {
   display: flex;
-  background-color: white;
+  background-color: rgb(126, 126, 126);
 }
 
 .parent-div:hover {
@@ -52,66 +75,198 @@ div:hover {
   background-color: #E2856E;
 }
 
-
-.header {
-  background-color: #f0f0f0; /* Set your desired background color for the header */
-  padding: 20px;
-}
-
-.welcome-to-my-profile {
-  padding: 0%;
-}
-
-.header-and-image {
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  /* width: fit-content; */
-  /* top: 50%;
-  right: 50%; */
-
-}
-.image-container {
+/* Header Start*/
+.images {
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin: 0%;
-  align-content: center;
+  height: 225px;
+  width: auto;
+  padding: 0%;
+  overflow:hidden;
+  background-color: rgb(255, 255, 255);
+}
+images:hover {
+  box-shadow: inset -18px 20px 0px rgb(32, 112, 198);
+  background: #448EE4 ear-gradient(#448EE4,#87CEEB e);
+}
+
+.rose {
+  background-image: url('../images/rose.png') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: none;
+  height: 10%;
+  width: auto;
+  position: absolute;
+  top: 100%;
+}
+
+.images:hover .rose {
+  top: 80%;
+}
+.images:hover #rose-1 {
+  transition: 1.4s;
+}
+.images:hover #rose-2 {
+  transition: 0.8s;
+}
+.images:hover #rose-3 {
+  transition: 1.8s;
+}
+
+#rose-1 {
+  left: 10%;
+}
+#rose-2 {
+  left: 25%;
+  transform: rotateY(180deg);
+}
+#rose-3 {
+  left: 80%;
+}
+.header {
+  background-color: rgb(160, 160, 160);
+}
+
+.welcome-header {
+  margin: 0 auto;
+  padding: 0%;
   text-align: center;
-  object-fit: contain;
-}
-
-#rose {
   position: absolute;
-  bottom: 0;
-  right: 45%;
+  height: 100%;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+.welcome-header div {
+  width: 100px;
   height: 100px;
-  object-fit: contain;
+  margin: 0 auto;
 }
 
-#plant {
+.welcome-header img {
+  padding: 20px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+
+
+.images:hover .welcome-header h1 {
+  transition: 1.2s;
+  color: rgba(33, 33, 33, 0);
+}
+.images:hover .welcome-header {
+  transition: 1.2s;
+
+}
+
+/* .welcome-header:hover {
+  transition: 1.5s;
+  transform: translateY(-100px);
+  opacity: 0;
+  box-shadow: none;
+} */
+
+
+
+.tree {
+  background-image: url('../images/tree.png') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: none;
+  height: 80%;
+  width: 80px;
   position: absolute;
-  bottom: 0;
-  right: 10%;
-  object-fit: contain;
+  top: 100%;
+}
+
+.images:hover .tree {
+  transition: 5s;
+  top: 35%;
 }
 
 #tree {
+  left: 50%;
+}
+
+/* Header end */
+
+.funky-flower {
+  background-image: url('../images/funky-flower.png') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: none;
+  height: 20%;
+  width: auto;
   position: absolute;
-  bottom: 0;
-  right: 60%;
-  object-fit: contain;
+  top: 100%;
 }
 
-#nature-imgs {
-  width: 100px;
-  height: 100px;
+.images:hover .funky-flower {
+  top: 88%;
+}
+.images:hover #funky-flower-1 {
+  transition: 1.4s;
+}
+.images:hover #funky-flower-2 {
+  transition: 0.8s;
+}
+.images:hover #funky-flower-3 {
+  transition: 1.8s;
 }
 
-
-/* Add a hover effect to the image-item */
-.image-item:hover {
-  transform: translateY(-20%); /* Adjust the value to control how much the images rise */
+#funky-flower-1 {
+  left: 15%;
+  transform: rotateY(180deg);
+}
+#funky-flower-2 {
+  left: 40%;
+}
+#funky-flower-3 {
+  left: 86%;
 }
 
+#funky-flower-4 {
+  left: 67%;
+}
+
+.images:hover #funky-flower-4 {
+  transition: 2s;
+  transform: rotateY(180deg);
+
+}
 .disabled {
   pointer-events: none;
+}
+
+
+
+.sun {
+  background-image: url('../images/sunface.jpg') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: none;
+  height: 10%;
+  width: auto;
+  position: absolute;
+  top: -55%;
+  height: 100px;
+  width: 100px;
+}
+
+#sun {
+  left: 5%;
+}
+
+.images:hover #sun {
+  transition: 4s;
+  top:1%;
 }
