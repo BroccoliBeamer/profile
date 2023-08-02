@@ -60,8 +60,13 @@ div:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
+.header:hover {
+  box-shadow: rgb(72, 122, 166) 0px 30px 60px -12px inset, rgba(0, 0, 0, 1) 0px 18px 36px -18px inset;
+  transition: 1s;
+}
 .welcome-to-my-profile {
   padding: 0%;
 }
@@ -79,6 +84,59 @@ div:hover {
   padding: 0 25%;
 }
 
+.image-header img {
+  margin: 0;
+  padding: 0;
+}
+
+.image-header {
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+
+.image-header img {
+  position: absolute;
+}
+
+/* Header Images along the bottom - end */
+#rose {
+  height: 25%;
+  bottom: -1px;
+  left: 10%;
+}
+#rose-1 {
+  height: 25%;
+  bottom: -25%;
+  left: 30%;
+}
+#rose-2 {
+  height: 25%;
+  bottom: -1px;
+  left: 80%;
+}
+#plant {
+  height: 12%;
+  bottom: -1px;
+  left: 25%;
+}
+#plant-1 {
+  height: 12%;
+  bottom: -1px;
+  left: 50%;
+}
+#plant-2 {
+  height: 12%;
+  bottom: -1px;
+  left: 60%;
+}
+#tree {
+  height: 1%;
+
+  bottom: -1px;
+  left: 70%;
+}
+/* Header Images along the bottom - end */
 .image-container {
   position: relative;
   margin: 0%;
@@ -87,38 +145,9 @@ div:hover {
   object-fit: contain;
 }
 
-#rose {
-  position: absolute;
-  bottom: 0;
-  right: 45%;
-  height: 100px;
-  object-fit: contain;
-}
-
-#plant {
-  position: absolute;
-  bottom: 0;
-  right: 10%;
-  object-fit: contain;
-}
-
-#tree {
-  position: absolute;
-  bottom: 0;
-  right: 60%;
-  object-fit: contain;
-}
-
-#nature-imgs {
-  width: 100px;
-  height: 100px;
-}
-
 
 /* Add a hover effect to the image-item */
-.image-item:hover {
-  transform: translateY(-20%); /* Adjust the value to control how much the images rise */
-}
+
 
 .disabled {
   pointer-events: none;
