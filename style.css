@@ -92,7 +92,7 @@ images:hover {
 }
 
 .rose {
-  background-image: url('../images/rose.png') !important;
+  background-image: url('./images/rose.png') !important;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
@@ -175,7 +175,7 @@ images:hover {
 
 
 .tree {
-  background-image: url('../images/tree.png') !important;
+  background-image: url('./images/tree.png') !important;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
@@ -198,7 +198,7 @@ images:hover {
 /* Header end */
 
 .funky-flower {
-  background-image: url('../images/—Pngtree—cartoon hippie sticker hand drawn_6238280.png') !important;
+  background-image: url('./images/—Pngtree—cartoon hippie sticker hand drawn_6238280.png') !important;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
@@ -249,7 +249,7 @@ images:hover {
 
 
 .sun {
-  background-image: url('../images/sunface.jpg') !important;
+  background-image: url('./images/sunface.jpg') !important;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
